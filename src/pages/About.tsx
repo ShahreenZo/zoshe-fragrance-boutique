@@ -35,29 +35,18 @@ const About = () => {
     }
   ];
 
-  // Enhanced team members data
   const teamMembers = [
     {
       name: "Shahreen Mohd Imran",
-      role: "Multi-credentialed Professional",
+      role: "Founder, Fragrance Curator, Aviation & Hotelier Professional, PR Engagement",
       quote: "Every fragrance tells a story. My mission is to help you discover yours.",
       gradient: "from-primary to-accent",
       expertise: ["Fragrance Composition", "Scent Profiling", "Quality Control"],
       achievement: "500+ Custom Fragrances",
       subRole: ""
-    },
-    {
-      name: "Nadeem .N . khan",
-      role: "Entrepreneur, Creative Director & Industrial Manufacturer",
-      subRole: "Beauty Cosmetics Company Owner - HERBOSOL",
-      quote: "My Aim is to provide simplified effective Beauty products & and deliver the same through luxurious Fragrances.",
-      gradient: "from-accent to-primary",
-      expertise: ["Cosmetics Manufacturer", "Product innovation", "Businesses strategist"],
-      achievement: "Industry Leader in Beauty Cosmetics"
     }
   ];
 
-  // Animation variants
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
@@ -83,9 +72,7 @@ const About = () => {
         <link rel="canonical" href="https://www.zoshe.in/about" />
       </Helmet>
       <div className="pt-8">
-        {/* Enhanced Hero Section */}
         <section className="relative overflow-hidden py-32 hero-gradient text-cream">
-          {/* Animated Background Elements */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-accent/20 via-transparent to-transparent"></div>
           <div className="absolute top-20 left-10 w-40 h-40 bg-accent/40 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-20 w-60 h-60 bg-primary/30 rounded-full blur-3xl animate-pulse delay-700"></div>
@@ -110,7 +97,6 @@ const About = () => {
               Embracing the essence of every individual through dedicated craftsmanship and passionate innovation.
             </motion.p>
 
-            {/* Enhanced Stats - Responsive Single Line */}
             <motion.div
               initial="hidden"
               animate="show"
@@ -122,7 +108,7 @@ const About = () => {
             >
               {[
                 { icon: <Crown className="w-6 h-6" />, value: "2025", label: "Founded" },
-                { icon: <Users className="w-6 h-6" />, value: "2", label: "Expert Founders" },
+                { icon: <Users className="w-6 h-6" />, value: "1", label: "Expert Founder" },
                 { icon: <Heart className="w-6 h-6" />, value: "10K+", label: "Happy Customers" }
               ].map((stat, idx) => (
                 <motion.div
@@ -139,8 +125,6 @@ const About = () => {
               ))}
             </motion.div>
 
-
-            {/* Scroll Indicator */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -154,9 +138,7 @@ const About = () => {
           </div>
         </section>
 
-        {/* Enhanced Story Section */}
         <section id="searchFilter" className="py-20 bg-background relative overflow-hidden">
-          {/* Background Elements */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-20 left-10 w-40 h-40 bg-primary rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-20 right-10 w-60 h-60 bg-accent rounded-full blur-3xl animate-pulse delay-1000"></div>
@@ -164,7 +146,6 @@ const About = () => {
 
           <div className="max-w-7xl mx-auto px-6 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              {/* Enhanced Text Content */}
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -187,7 +168,7 @@ const About = () => {
                     transition={{ delay: 0.2 }}
                     className="text-foreground/80"
                   >
-                    Founded in 2025, A master of Perfumery with Beauty & Cosmetics Company Owner came together to form this brand . At ZOSHE, we believe your fragrance should be as unique as you are.
+                    Founded in 2025, ZOSHE was built with a single vision: to create refined fragrances that feel personal, luxurious, and memorable.
                   </motion.p>
 
                   <motion.p
@@ -197,10 +178,7 @@ const About = () => {
                     transition={{ delay: 0.4 }}
                     className="text-foreground/80"
                   >
-                    Each creation is more than just a perfume—it is a signature. Using
-                    the world's finest ingredients and artisanal blending techniques,
-                    our perfumes are tailored to capture individuality and leave a
-                    lasting impression.
+                    Each creation is more than just a perfume—it is a signature. Using the world's finest ingredients and artisanal blending techniques, our perfumes are tailored to capture individuality and leave a lasting impression.
                   </motion.p>
 
                   <motion.p
@@ -210,29 +188,11 @@ const About = () => {
                     transition={{ delay: 0.6 }}
                     className="text-foreground/80"
                   >
-                    With ZOSHE, luxury meets personalization. We don't just make perfumes—
-                    we create your essence, drop by drop.
+                    With ZOSHE, luxury meets personalization. We don't just make perfumes—we create your essence, drop by drop.
                   </motion.p>
                 </div>
-
-                {/* Enhanced CTA */}
-                {/* <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.8 }}
-                className="flex flex-col sm:flex-row gap-4 pt-4"
-              >
-                <Button className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white shadow-lg transition-all duration-300 hover:scale-105 px-8">
-                  Explore Our Collection
-                </Button>
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 px-8">
-                  Learn Our Process
-                </Button>
-              </motion.div> */}
               </motion.div>
 
-              {/* Enhanced Image */}
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -248,10 +208,8 @@ const About = () => {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       loading="lazy"
                     />
-                    {/* Enhanced overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
-                  {/* Enhanced glowing background */}
                   <div className="absolute -inset-8 bg-gradient-to-br from-accent/30 to-primary/20 rounded-3xl blur-3xl opacity-50 group-hover:opacity-70 transition-opacity duration-500"></div>
                 </div>
               </motion.div>
@@ -259,16 +217,13 @@ const About = () => {
           </div>
         </section>
 
-        {/* Enhanced Founders Spotlight Section */}
         <section className="py-20 bg-muted/20 relative overflow-hidden">
-          {/* Background Elements */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-20 right-10 w-60 h-60 bg-accent rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-20 left-10 w-40 h-40 bg-primary rounded-full blur-3xl animate-pulse delay-1000"></div>
           </div>
 
           <div className="max-w-7xl mx-auto px-6 relative z-10">
-            {/* Enhanced Section Header */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -277,16 +232,15 @@ const About = () => {
               className="text-center mb-16"
             >
               <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-                Meet Our <span className="text-accent">Founders</span>
+                Meet Our <span className="text-accent">Founder</span>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Two passionate entrepreneurs who combined their expertise to create something extraordinary in the world of luxury fragrances.
+                A dedicated entrepreneur with a passion for creating luxury fragrances that feel meaningful, personal, and unforgettable.
               </p>
             </motion.div>
 
-            {/* Enhanced Team Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 max-w-3xl mx-auto">
               {teamMembers.map((member, index) => (
                 <motion.div
                   key={member.name}
@@ -296,11 +250,9 @@ const About = () => {
                   transition={{ duration: 0.8, delay: index * 0.2 }}
                   className="glass-card p-8 rounded-2xl backdrop-blur-xl border border-border/20 hover:shadow-2xl transition-all duration-500 group relative overflow-hidden"
                 >
-                  {/* Enhanced background gradient */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${member.gradient} opacity-5 group-hover:opacity-10 transition-opacity duration-500`}></div>
 
                   <div className="relative z-10">
-                    {/* Enhanced Profile Section */}
                     <div className="text-center mb-8 pt-6">
                       <h3 className="text-2xl md:text-3xl font-bold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
                         {member.name}
@@ -317,13 +269,11 @@ const About = () => {
                       )}
                     </div>
 
-                    {/* Enhanced Content */}
                     <div className="space-y-6">
                       <blockquote className="text-muted-foreground text-lg italic leading-relaxed text-center border-l-4 border-gradient-to-b from-primary to-accent pl-4 py-2">
                         "{member.quote}"
                       </blockquote>
 
-                      {/* Expertise Tags */}
                       <div>
                         <h4 className="text-sm font-semibold text-primary mb-3">Expertise:</h4>
                         <div className="flex flex-wrap gap-2">
@@ -338,7 +288,6 @@ const About = () => {
                         </div>
                       </div>
 
-                      {/* Achievement Badge */}
                       <div className={`text-center p-4 bg-gradient-to-r ${member.gradient} bg-opacity-10 rounded-xl border border-gradient-to-r from-primary/20 to-accent/20`}>
                         <div className="flex items-center justify-center gap-2 mb-2">
                           <Star className="w-4 h-4 text-accent" />
@@ -348,7 +297,6 @@ const About = () => {
                       </div>
                     </div>
 
-                    {/* Enhanced decorative elements */}
                     <div className="flex justify-center mt-6 space-x-2">
                       <div className={`w-2 h-2 bg-gradient-to-r ${member.gradient} rounded-full animate-pulse`}></div>
                       <div className={`w-3 h-3 bg-gradient-to-r ${member.gradient} rounded-full animate-pulse delay-100`}></div>
@@ -361,16 +309,13 @@ const About = () => {
           </div>
         </section>
 
-        {/* Enhanced Values Section */}
         <section className="py-20 bg-background relative overflow-hidden">
-          {/* Background Elements */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-20 left-1/4 w-60 h-60 bg-primary rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-20 right-1/4 w-40 h-40 bg-accent rounded-full blur-3xl animate-pulse delay-1000"></div>
           </div>
 
           <div className="max-w-7xl mx-auto px-6 relative z-10">
-            {/* Enhanced Section Header */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -387,7 +332,6 @@ const About = () => {
               </p>
             </motion.div>
 
-            {/* Enhanced Values Grid */}
             <motion.div
               variants={stagger}
               initial="initial"
@@ -403,20 +347,16 @@ const About = () => {
                   className="group"
                 >
                   <Card className="glass-card hover:shadow-2xl transition-all duration-500 text-center h-full backdrop-blur-xl border border-border/20 overflow-hidden relative">
-                    {/* Background gradient */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${value.gradient} opacity-5 group-hover:opacity-10 transition-opacity duration-500`}></div>
 
                     <CardContent className="p-8 relative z-10">
-                      {/* Enhanced Icon */}
                       <div className="relative mb-6">
                         <div className={`w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br ${value.gradient} flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-500`}>
                           <value.icon className="w-10 h-10 text-white" />
                         </div>
-                        {/* Icon glow */}
                         <div className={`absolute -inset-2 bg-gradient-to-br ${value.gradient} rounded-2xl opacity-20 blur-xl group-hover:opacity-40 transition-opacity duration-500`}></div>
                       </div>
 
-                      {/* Enhanced Content */}
                       <h3 className="text-xl font-semibold text-primary mb-4 group-hover:text-accent transition-colors duration-300">
                         {value.title}
                       </h3>
@@ -424,7 +364,6 @@ const About = () => {
                         {value.description}
                       </p>
 
-                      {/* Decorative element */}
                       <div className={`w-12 h-1 bg-gradient-to-r ${value.gradient} rounded-full mx-auto mt-6 opacity-70`}></div>
                     </CardContent>
                   </Card>
@@ -434,10 +373,8 @@ const About = () => {
           </div>
         </section>
 
-        {/* Enhanced Craftsmanship Section */}
         <section className="py-20 bg-muted/10 relative overflow-hidden">
           <div className="max-w-6xl mx-auto text-center px-6 relative z-10">
-            {/* Enhanced Header */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -454,7 +391,6 @@ const About = () => {
               </p>
             </motion.div>
 
-            {/* Enhanced Process Steps */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {[
                 {
@@ -489,21 +425,18 @@ const About = () => {
                   className="group relative"
                 >
                   <div className="glass-card p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center h-full backdrop-blur-xl border border-border/20 relative overflow-hidden">
-                    {/* Background gradient */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-5 group-hover:opacity-10 transition-opacity duration-500`}></div>
 
                     <div className="relative z-10">
-                      {/* Enhanced Step Number */}
                       <div className="relative mb-6">
                         <div className={`text-6xl md:text-7xl font-bold bg-gradient-to-br ${item.gradient} bg-clip-text text-transparent opacity-20 absolute -top-4 left-1/2 -translate-x-1/2`}>
                           {item.step}
                         </div>
-                        <div className={`w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br ${item.gradient} flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-500 relative z-10`}>
+                        <div className={`w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br ${item.gradient} flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-500`}>
                           <item.icon className="w-10 h-10 text-white" />
                         </div>
                       </div>
 
-                      {/* Enhanced Content */}
                       <h3 className="text-xl md:text-2xl font-semibold text-primary mb-4 group-hover:text-accent transition-colors duration-300">
                         {item.title}
                       </h3>
@@ -511,7 +444,6 @@ const About = () => {
                         {item.desc}
                       </p>
 
-                      {/* Enhanced accent bar */}
                       <div className={`w-16 h-1 bg-gradient-to-r ${item.gradient} rounded-full mx-auto opacity-70 group-hover:w-24 transition-all duration-500`}></div>
                     </div>
                   </div>
@@ -521,16 +453,13 @@ const About = () => {
           </div>
         </section>
 
-        {/* Enhanced Timeline Section */}
         <section className="py-20 bg-muted/30 relative overflow-hidden">
-          {/* Background Elements */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-20 left-20 w-40 h-40 bg-accent rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-20 right-20 w-60 h-60 bg-primary rounded-full blur-3xl animate-pulse delay-1000"></div>
           </div>
 
           <div className="max-w-4xl mx-auto px-6 relative z-10">
-            {/* Enhanced Header */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -547,9 +476,7 @@ const About = () => {
               </p>
             </motion.div>
 
-            {/* Enhanced Timeline */}
             <div className="relative flex flex-col items-center">
-              {/* Enhanced Central Line */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary via-accent to-primary opacity-30"></div>
 
               <motion.div
@@ -559,14 +486,11 @@ const About = () => {
                 transition={{ duration: 0.8 }}
                 className="flex flex-col items-center mb-12 relative z-10"
               >
-                {/* Enhanced Dot */}
                 <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-full shadow-xl mb-8 relative">
                   <div className="absolute -inset-2 bg-gradient-to-r from-primary to-accent rounded-full opacity-30 blur-sm animate-pulse"></div>
                 </div>
 
-                {/* Enhanced Card */}
                 <div className="glass-card p-8 text-center max-w-2xl hover:shadow-2xl transition-all duration-500 rounded-2xl backdrop-blur-xl border border-border/20 group relative overflow-hidden">
-                  {/* Background gradient */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 group-hover:from-primary/10 group-hover:to-accent/10 transition-all duration-500"></div>
 
                   <div className="relative z-10">
@@ -578,10 +502,9 @@ const About = () => {
                       The Beginning
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Shahreen Mohd Imran founded the company with a vision to create the best products for our clients' tailored necessities. Nadeem .N Khan has excelled in the field of Cosmetics which runs down through generations in building Beauty & cosmetics. A journey from Friendship to Business created ZOSHE. Where two young individuals combined their best abilities and aspire to conquer great lengths together.
+                      Shahreen Mohd Imran founded the company with a vision to create the best products for our clients' tailored necessities, blending creativity, care, and luxury in every detail.
                     </p>
 
-                    {/* Decorative element */}
                     <div className="flex justify-center mt-6 space-x-2">
                       <div className="w-2 h-2 bg-gradient-to-r from-primary to-accent rounded-full animate-pulse"></div>
                       <div className="w-3 h-3 bg-gradient-to-r from-primary to-accent rounded-full animate-pulse delay-100"></div>
@@ -594,7 +517,6 @@ const About = () => {
           </div>
         </section>
 
-        {/* Enhanced CTA Section */}
         <section className="py-20 bg-background relative overflow-hidden">
           <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
             <motion.div
@@ -626,14 +548,6 @@ const About = () => {
                         Start Your Journey
                       </Button>
                     </Link>
-                    {/* <Button 
-                    variant="outline" 
-                    size="lg"
-                    className="border-primary text-primary hover:bg-primary/5 rounded-full px-8"
-                  >
-                    <Users className="w-5 h-5 mr-2" />
-                    Meet Our Team
-                  </Button> */}
                   </div>
                 </CardContent>
               </Card>
