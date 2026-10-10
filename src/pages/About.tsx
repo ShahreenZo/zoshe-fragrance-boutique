@@ -44,6 +44,15 @@ const About = () => {
       expertise: ["Fragrance Composition", "Scent Profiling", "Quality Control"],
       achievement: "500+ Custom Fragrances",
       subRole: ""
+    },
+    {
+      name: "Mohammed Imran",
+      role: "Strategic Investor & Patisserie Chef",
+      quote: "Ability to turn visual experience into unforgettable memory",
+      gradient: "from-accent to-primary",
+      expertise: ["Culinary Artist", "Business Investor", "Strategic Growth", "Luxury Brand Recognition"],
+      achievement: "Recognition from Luxury Brands",
+      subRole: "Saudi Arabia"
     }
   ];
 
@@ -108,7 +117,7 @@ const About = () => {
             >
               {[
                 { icon: <Crown className="w-6 h-6" />, value: "2025", label: "Founded" },
-                { icon: <Users className="w-6 h-6" />, value: "1", label: "Expert Founder" },
+                { icon: <Users className="w-6 h-6" />, value: "2", label: "Expert Members" },
                 { icon: <Heart className="w-6 h-6" />, value: "10K+", label: "Happy Customers" }
               ].map((stat, idx) => (
                 <motion.div
@@ -232,15 +241,15 @@ const About = () => {
               className="text-center mb-16"
             >
               <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-                Meet Our <span className="text-accent">Founder</span>
+                Meet Our <span className="text-accent">Leadership</span>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent rounded-full mx-auto mb-6"></div>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                A dedicated entrepreneur with a passion for creating luxury fragrances that feel meaningful, personal, and unforgettable.
+                A visionary team combining fragrance expertise, culinary artistry, and strategic business acumen to create luxury experiences.
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {teamMembers.map((member, index) => (
                 <motion.div
                   key={member.name}
